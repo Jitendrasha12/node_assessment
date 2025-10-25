@@ -1,4 +1,3 @@
-// controllers/uploadController.js
 const { Worker } = require('worker_threads');
 const path = require('path');
 

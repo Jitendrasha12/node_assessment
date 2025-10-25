@@ -1,4 +1,4 @@
-// controllers/policyController.js
+
 const User = require('../models/User');
 const Policy = require('../models/Policy');
 

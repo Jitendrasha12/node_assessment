@@ -1,4 +1,3 @@
-// controllers/scheduleController.js
 const ScheduledMessage = require('../models/ScheduledMessage');
 const schedule = require('node-schedule');
 
