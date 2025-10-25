@@ -7,7 +7,7 @@ It also includes real-time CPU monitoring and scheduled database insertion using
 
 ## 🚀 Features
 
-### **Task 1 – Data Management**
+
 1. Upload and parse **CSV/XLSX** data into MongoDB using **Worker Threads**.  
    - Collections:  
      - Agent  
@@ -19,7 +19,6 @@ It also includes real-time CPU monitoring and scheduled database insertion using
 2. Search API to find policy info by **username**.  
 3. Aggregation API to show policies grouped by each user.
 
-### **Task 2 – System and Services**
 1. **Real-time CPU Utilization Tracker**  
    - Restarts the server automatically if CPU usage exceeds **70%**.
 2. **Scheduled Post Service**  
@@ -75,7 +74,7 @@ It also includes real-time CPU monitoring and scheduled database insertion using
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/your-username/nodejs-assessment.git
+   git clone https://github.com/Jitendrasha12/nodejs-assessment.git
    cd nodejs-assessment
    ```
 
@@ -147,15 +146,7 @@ curl "http://localhost:5000/api/policy/aggregate"
 
 ---
 
-### 4️⃣ CPU Monitor Service
-Monitors real-time CPU usage; restarts the server if usage >70%.
 
-You can run it as a background service:
-```js
-require('./utils/cpuMonitor')();
-```
-
----
 
 ### 5️⃣ Scheduled Message Service
 **POST** `/api/schedule`
@@ -186,29 +177,6 @@ curl -X POST http://localhost:5000/api/schedule   -H "Content-Type: application/
 | **Carrier** | Insurance company details |
 | **Policy** | Policy info with user, agent, carrier references |
 
----
-
-## 🧠 Interview Key Points
-
-| Question | Answer |
-|-----------|---------|
-| Why use Worker Threads? | To handle CPU-intensive tasks (like file parsing) without blocking the event loop. |
-| How do `parentPort` and `workerData` work? | `workerData` sends input to the worker, and `parentPort.postMessage()` sends result back. |
-| Can we call `run()` from API? | Not directly — worker runs in its own thread, but we can trigger it via messages. |
-| Why restart server on 70% CPU? | To prevent performance degradation and maintain stability under heavy load. |
-
----
-
-## 📦 Example Response (Upload API)
-```json
-{
-  "success": true,
-  "inserted": 120
-}
-```
-
----
-
 ## 🧰 Scripts
 
 | Command | Description |
@@ -223,8 +191,8 @@ curl -X POST http://localhost:5000/api/schedule   -H "Content-Type: application/
 
 **Jitendra Sharma**  
 Node.js Backend Developer  
-📧 [your-email@example.com]  
-🌐 [GitHub Profile](https://github.com/your-username)
+📧 [jitendra.sharma6860@gmail.com]  
+🌐 [GitHub Profile](https://github.com/Jitendrasha12)
 
 ---
 
