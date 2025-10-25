@@ -146,15 +146,7 @@ curl "http://localhost:5000/api/policy/aggregate"
 
 ---
 
-### 4️⃣ CPU Monitor Service
-Monitors real-time CPU usage; restarts the server if usage >70%.
 
-You can run it as a background service:
-```js
-require('./utils/cpuMonitor')();
-```
-
----
 
 ### 5️⃣ Scheduled Message Service
 **POST** `/api/schedule`
@@ -184,29 +176,6 @@ curl -X POST http://localhost:5000/api/schedule   -H "Content-Type: application/
 | **Lob** | Policy categories |
 | **Carrier** | Insurance company details |
 | **Policy** | Policy info with user, agent, carrier references |
-
----
-
-## 🧠 Interview Key Points
-
-| Question | Answer |
-|-----------|---------|
-| Why use Worker Threads? | To handle CPU-intensive tasks (like file parsing) without blocking the event loop. |
-| How do `parentPort` and `workerData` work? | `workerData` sends input to the worker, and `parentPort.postMessage()` sends result back. |
-| Can we call `run()` from API? | Not directly — worker runs in its own thread, but we can trigger it via messages. |
-| Why restart server on 70% CPU? | To prevent performance degradation and maintain stability under heavy load. |
-
----
-
-## 📦 Example Response (Upload API)
-```json
-{
-  "success": true,
-  "inserted": 120
-}
-```
-
----
 
 ## 🧰 Scripts
 
