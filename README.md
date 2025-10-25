@@ -7,7 +7,7 @@ It also includes real-time CPU monitoring and scheduled database insertion using
 
 ## 🚀 Features
 
-### **Task 1 – Data Management**
+
 1. Upload and parse **CSV/XLSX** data into MongoDB using **Worker Threads**.  
    - Collections:  
      - Agent  
@@ -19,7 +19,6 @@ It also includes real-time CPU monitoring and scheduled database insertion using
 2. Search API to find policy info by **username**.  
 3. Aggregation API to show policies grouped by each user.
 
-### **Task 2 – System and Services**
 1. **Real-time CPU Utilization Tracker**  
    - Restarts the server automatically if CPU usage exceeds **70%**.
 2. **Scheduled Post Service**  
@@ -75,7 +74,7 @@ It also includes real-time CPU monitoring and scheduled database insertion using
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/your-username/nodejs-assessment.git
+   git clone https://github.com/Jitendrasha12/nodejs-assessment.git
    cd nodejs-assessment
    ```
 
@@ -223,8 +222,8 @@ curl -X POST http://localhost:5000/api/schedule   -H "Content-Type: application/
 
 **Jitendra Sharma**  
 Node.js Backend Developer  
-📧 [your-email@example.com]  
-🌐 [GitHub Profile](https://github.com/your-username)
+📧 [jitendra.sharma6860@gmail.com]  
+🌐 [GitHub Profile](https://github.com/Jitendrasha12)
 
 ---
 
